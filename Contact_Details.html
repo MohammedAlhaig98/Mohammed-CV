@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <ul>
+        <li><a href="tel:8296947583">Call</a></li>
+        <li><a href="mailto:alhaigmohammed@gmail.com">Maill</a></li>
+    </ul>
+    <caption>FeedBack</caption>
+    <form action="Index.php" method="post" enctype="application/x-www-form-urlencoded">
+        <!--Action means what is from must do after complete details-->
+        <!--method is How to send data to the server and has two types :
+            1)get-> When you Send Details it show on link up next of window name 
+            NEVER use GET to send sensitive data!
+            The length of a URL is limited (2048 characters)
+
+            2)post->When you Send Details it not show on link up next of window name
+            POST has no size limitations, and can be used to send large amounts of data.
+             --> 
+        <!-- enctype is encryption type نوع التشفير-->     
+        <span style="color: red;">*</span><label>Your Name :</label>
+        <input type="text" required min="5" max="45"><br>
+        <span style="color: red;">*</span><label>Your Email :</label>
+        <input type="email" required><br>
+        <span style="color: red;">*</span><label>Your Message :</label><br>
+        <textarea name="" id="" cols="30" rows="10"></textarea><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
